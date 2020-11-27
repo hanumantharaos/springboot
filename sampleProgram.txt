@@ -1,0 +1,122 @@
+package com.test;
+
+public class PrintInteger {
+
+	public static void main(String[] args) {
+		
+		int n = 5795;
+	for (int  i=0; i< 4; i++) {
+		
+		 
+		
+		switch ( i) {
+		
+		case 0 : {int k =  n / 1000;
+		         printDigitValue(k);
+			     System.out.println("Thousand");
+		         break;
+		}
+		         
+		case 1 :  {
+			    int l = n / 100;
+		         int k = l % 10;
+		         printDigitValue(k);
+			     System.out.println("Hundred");
+                  break;
+		}
+		case 2 : {
+			
+			int l = n / 10;
+	         int k = l % 10;
+	         printDecimalValue(k);
+             break;
+                 
+		}
+        
+		case 3 :{ 
+			int l = n % 10;
+			printDigitValue(l);
+        break;  
+		}
+		case 4 : System.out.println("four");
+        break;  
+        
+		
+		}
+		//n = n/10;
+	}
+	
+	
+
+	}
+	
+	public static void printDigitValue(int j) {
+		
+		
+	      switch ( j) {
+			
+	     
+			         
+			case 1 :
+				    System.out.println("one");
+	                  break;
+			case 2 : System.out.println("two");
+	                 break;  
+	        
+			case 3 : System.out.println("three");
+	        break;  
+	        
+			case 4 : System.out.println("four");
+	        break;  
+	        
+			case 5 : System.out.println("five");
+	        break;  
+	        
+			case 6 : System.out.println("six");
+	        break;  
+	        
+			case 7 : System.out.println("seven");
+	        break;  
+			case 8 : System.out.println("eight");
+	        break;  
+	        
+			case 9 : System.out.println("nine");
+	        break;  
+			}
+			
+		}
+	
+	public static void printDecimalValue(int k) {
+		
+		
+	      switch ( k) {
+			
+	     
+			case 2 : System.out.println("twenty");
+	                 break;  
+	        
+			case 3 : System.out.println("thirty");
+	        break;  
+	        
+			case 4 : System.out.println("fourty");
+	        break;  
+	        
+			case 5 : System.out.println("fifty");
+	        break;  
+	        
+			case 6 : System.out.println("sixty");
+	        break;  
+	        
+			case 7 : System.out.println("seventy");
+	        break;  
+			case 8 : System.out.println("eighty");
+	        break;  
+	        
+			case 9 : System.out.println("ninty");
+	        break;  
+			}
+			
+		}
+     
+
+}
